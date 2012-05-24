@@ -6,14 +6,14 @@ from django import template
 register = template.Library()
  
 @register.filter("path2title")
-def path2title(path):
+def path2title(value):
     """Returns the title case of a path
     
     >>  path2title('/Users/mark/derp.git')
     ... derp
     
     """
-    return os.path.basename(path).split('.')[0]
+    return os.path.basename(value).split('.')[0]
 
 @register.filter("first_eight")
 def first_eight(value):
