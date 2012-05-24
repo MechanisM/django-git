@@ -1,3 +1,4 @@
 *.pyc
 *.kpf
 django_git.egg-info
+dist/
