@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block title %}
-    {{ repo.path|path2title }} : {{ commit|first_eight }}
+    {{ repo.working_dir|path_into_title }} : {{ commit|first_eight }}
 {% endblock %}
 
 {% block main_content %}

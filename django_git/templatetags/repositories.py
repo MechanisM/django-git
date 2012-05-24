@@ -5,15 +5,15 @@ import os.path
 from django import template
 register = template.Library()
  
-@register.filter("path2title")
-def path2title(value):
+@register.filter("path_into_title")
+def path_into_title(value):
     """Returns the title case of a path
     
     >>  path2title('/Users/mark/derp.git')
     ... derp
     
     """
-    return os.path.basename(value).split('.')[0]
+    return value.split(os.sep)[-1]
 
 @register.filter("first_eight")
 def first_eight(value):
