@@ -19,5 +19,5 @@ setup(
     packages=['django_git', 'django_git.templatetags'],
     package_data={ 'django_git' : ['templates/django_git/*.html', 'media/js/*.js']},
     zip_safe=False,
-    install_requires=['GitPython >=0.1.4', 'Pygments >=0.11'],
+    install_requires=['GitPython >=0.3', 'Pygments >=0.11'],
 )
